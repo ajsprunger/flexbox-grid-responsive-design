@@ -40,7 +40,7 @@ main {
     'headshot headshot'
     'occupation occupation'
     'offer offer'
-    'call text'
+    'footer footer';
 }
 
 #headshot {
@@ -52,6 +52,7 @@ main {
 
 #status {
   text-align: right;
+  font-weight: 300;
 }
 
 img {
@@ -73,15 +74,26 @@ img {
   font-size: 1.4rem;
 }
 
-#contact:first-child {
-  grid-area: call;
-  background-color: ivory;
+#contact {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-areas: 'left right';
+  background-color: lightgreen;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-content: center;
 }
 
-#contact:last-child {
-  grid-area: text;
-  background-color: ivory;
+#phone {
+  grid-area: left;
 }
+
+#text {
+  grid-area: right;
+}
+
+
 
 /* @media only screen and (min-width: 768px) {
   body {
@@ -93,4 +105,4 @@ img {
       "side content"
       "footer footer";
   }
-} */ 
+} */
