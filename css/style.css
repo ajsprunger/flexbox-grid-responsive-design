@@ -138,6 +138,7 @@ img {
   #brand {
     grid-area: brand;
     font-size: 1.5rem;
+    color: black;
   }
 
   #offer {
