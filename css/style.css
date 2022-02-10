@@ -47,7 +47,7 @@ main {
   background-color: ivory;
   text-align: right;
   font-weight: 200;
-  margin-right: 5px;
+  margin-right: 3px;
 } 
 
 #name {
@@ -122,7 +122,7 @@ img {
     width: 650px;
     text-align: left;
     background-color: ivory;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 35% 65%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: 
       'status name'
@@ -133,7 +133,7 @@ img {
   #status {
     grid-area: status;
     text-align: left;
-    margin: 10px;
+    margin-left: 3px;
   }
 
   img {
@@ -148,21 +148,21 @@ img {
   #phone, #text {
     width: 100%;
     margin: 0;
-    height: 100px;
+    height: 80px;
   }
 
   #name {
     grid-area: name;
     justify-self: start;
-    padding-left: 10px;
+    margin-left: 10px;
   }
 
   #occupation {
     grid-area: occupation;
     text-align: left;
-    padding-left: 10px;
     background-color: ivory;
     font-size: 1.6rem;
+    margin-left: 10px;
   }
 
   #brand {
@@ -171,16 +171,14 @@ img {
     color: black;
     padding-left: 10px;
     display: flex;
+    border-left: solid 5px green;
+    margin-left: 10px;
   }
 
   #offer {
     grid-area: offer;
     text-align: left;
-    padding: 10px;
-  }
-
-  #offer > p:first-child {
-    content: '5 minutes free';
+    margin-left: 10px;
   }
 
 }
